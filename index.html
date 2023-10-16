@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Applify</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/bulma-0.9.4.min.css">
+        <link rel="stylesheet" href="assets/fontawesome-5.15.4-web/css/all.min.css"></link>
+        <script src="./index.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container" style="width: 334px ;padding: 20px;">
+            <div class="content">
+                <h1>Applify</h1>
+            </div>
+            
+            
+
+            <div class="box">
+                
+                <div class="content">
+                    <h5>Current Session</h5>
+                </div>
+                <div class="notification is-primary">
+                    <h5 id="current-session-status">Session ID: </h5>
+                </div>
+                <div class="content">
+                    <h5>Active Tags</h5>
+                </div>
+                <div id="tags" class="field is-grouped is-grouped-multiline">
+                    <article class="message is-danger">
+                        <div style="padding: 5px; width: 255px;" class="message-body">
+                            <span class="icon is-medium">
+                                <i class="fas fa-exclamation-circle fa-2xs"></i>
+                            </span>
+                            No Active Tags Available
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <h4>Tools & Settings</h4>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 4px;" class="">
+                    <div class="">
+                        <button id="start-session" class="button is-large is-success" title="Start Session">
+                            <span class="icon is-medium">
+                                <i class="fas fa-play fa-2x fas-fade"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="is-hidden">
+                        <button id="stop-session" class="button is-large is-warning" title="Stop Session">
+                            <span class="icon is-medium">
+                                <i class="fas fa-pause fa-2x fas-fade"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="">
+                        <button id="resume-session" class="button is-large is-info" title="Resume Last Session">
+                            <span class="icon is-medium">
+                                <i class="fas fa-history fa-2x"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="">
+                        <button id="save-applies-as-svg" class="button is-large is-info" title="Save Apply Data as SVG">
+                            <span class="icon is-medium">
+                                <i class="fas fa-file-csv fa-2x"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="">
+                        <button id="delete-all-applies" class="button is-large is-danger" title="Delete All Apply Data">
+                            <span class="icon is-medium">
+                                <i class="fas fa-trash fa-2x"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="">
+                        <button id="setting" class="button is-large is-link" title="Settings & Panel">
+                            <span class="icon is-medium">
+                                <i class="fas fa-wrench fa-2x"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </body>
+
+    
+
+</html>

@@ -1,0 +1,12 @@
+.applify-wrapping-autocomplete{
+    background-color: rgba(255,255,255,1);
+    border-radius: 4px;
+    border-radius: calc(16*1*1px/4);
+    box-shadow: 0 0 0 1px rgba(35,38,59,.1), 0 6px 16px -4px rgba(35,38,59,.15);
+    box-shadow: 0 0 0 1px rgba(35,38,59,.1),0 6px 16px -4px rgba(35,38,59,.15);
+    margin: 8px 0 0;
+    overflow: hidden;
+    position: absolute;
+    transition: opacity .2s ease-in,filter .2s ease-in;
+    z-index: 10;
+}

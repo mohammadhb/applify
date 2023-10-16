@@ -1,0 +1,49 @@
+{
+    "name": "Applify",
+    "version": "0.1.0",
+    "description": "Apply Jobs",
+    "manifest_version": 3,
+    "author": "Mohammad Hosein Balkhani",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Applying..."
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "tabs",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "js": [
+            ],
+            "css": [
+                "assets/css/bulma-0.9.4.min.css"
+            ],
+            "matches": ["http://*/*","https://*/*"],
+            "run_at": "document_start"
+        },
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "css": [
+                "scripts/content.css"
+            ],
+            "matches": ["http://*/*","https://*/*"],
+            "run_at": "document_idle"
+        }        
+    ],
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "Ctrl+Shift+F"
+            }
+        }
+    }
+}
